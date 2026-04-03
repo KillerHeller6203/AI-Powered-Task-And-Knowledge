@@ -1,0 +1,17 @@
+TaskIQ System Overview and Getting Started Guide
+
+TaskIQ is an AI-powered task and knowledge management system designed to help teams organize work and find information efficiently.
+
+Key Features:
+1. Task Management - Create, assign, and track tasks with priority levels and deadlines
+2. Document Search - Upload documents and search them using AI-powered semantic search
+3. Role-Based Access - Admin and User roles with appropriate permissions
+4. Activity Logging - All key actions are tracked for auditing
+
+Getting Started:
+- Admin users can create tasks and upload documents
+- Regular users can view their assigned tasks and search documents
+- Use the search feature to find relevant information quickly
+- Tasks can have three priority levels: low, medium, and high
+
+The semantic search feature uses sentence-transformers (all-MiniLM-L6-v2) to convert your query into a 384-dimensional vector and FAISS (IndexFlatIP) to find the most semantically similar document chunks using cosine similarity.

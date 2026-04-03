@@ -1,0 +1,19 @@
+Document Upload and Search Guide
+
+Uploading Documents:
+Both .txt and .pdf files are supported. Files must be under 10 MB.
+When you upload a document, it is automatically chunked and indexed for semantic search.
+
+How Semantic Search Works:
+1. Documents are split into 512-word chunks with 64-word overlap (sliding window)
+2. Each chunk is encoded into a 384-dimensional vector using all-MiniLM-L6-v2
+3. Vectors are stored in a FAISS IndexFlatIP index on disk
+4. When you search, your query is encoded into the same vector space
+5. Inner product (cosine similarity on normalized vectors) ranks results
+6. The top-K most similar chunks are returned, deduplicated by document
+
+Search Tips:
+- Use natural language queries for best results
+- Search works even without exact keyword matches
+- The similarity score is a percentage (higher is more relevant)
+- Excerpts show the most relevant chunk from each document
