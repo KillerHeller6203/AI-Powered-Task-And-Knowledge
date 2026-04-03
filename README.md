@@ -10,10 +10,10 @@
 ![Dashboard](docs/dashboard.png)
 
 ### Analytics
-![Analytics](docs/screenshots/analytics.png)
+![Analytics](docs/analytics.png)
 
 ### Knowledge Search (FAISS semantic search — 62.8% match)
-![Search](docs/screenshots/search.png)
+![Search](docs/search.png)
 
 ---
 
