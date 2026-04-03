@@ -7,7 +7,7 @@
 ## Screenshots
 
 ### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
+![Dashboard](docs/dashboard.png)
 
 ### Analytics
 ![Analytics](docs/screenshots/analytics.png)
