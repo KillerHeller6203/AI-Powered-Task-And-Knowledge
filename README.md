@@ -220,3 +220,8 @@ Search queries are also stored in `search_logs` to power the **Top Queries** ana
 - User breakdown (total, active, admins)
 - Document count + total indexed chunks
 - Live recent activity feed
+
+---
+
+## Note: Roles are stored as an enum column on the users table rather than 
+- a separate roles table — a deliberate tradeoff for MVP simplicity.
